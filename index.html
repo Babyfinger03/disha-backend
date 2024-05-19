@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SIA Test Backend Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SIA TEST BACKEND WEBPAGE FOR IMPLEMENTING DATA</h1>
+    <h2>Disha Data controlling and implementation page</h2>
+    <div class="button-container">
+        <button><a href="siatest.html">SIA TEST</a></button>
+        <button><a href="news.html">NEWS</a></button>
+        <button><a href="explore.html">EXPLORE</a></button>
+        <button><a href="about_us.html">ABOUT US</a></button>
+        <button><a href="user_data.html">USER DATA</a></button>
+        <button><a href="couns.html">COUNSELLORS</a></button>
+        <button><a href="t_and_c.html">T &amp; C</a></button>
+        <button><a href="algorithm.html">ALGORITHM</a></button>
+        <button><a href="ui_control.html">UI CONTROL</a></button>
+    </div>
+    
+
+    <script>
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                console.log(`${button.textContent} button clicked!`);
+                // Add your button click functionality here
+            });
+        });
+    </script>
+</body>
+</html>

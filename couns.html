@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counselors Control</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .counselors-list {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .counselor-details {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .image-container {
+            background-color: #ccc;
+            height: 200px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>COUNSELORS CONTROL</h1>
+    <div class="container">
+        <div class="counselors-list">
+            <h2>LIST OF COUNSELORS</h2>
+            <!-- Add counselors list here -->
+        </div>
+        <div>
+            <div class="image-container">ADD IMAGE</div>
+            <div class="counselor-details">
+                <input type="text" placeholder="name">
+                <input type="text" placeholder="Age">
+                <input type="text" placeholder="Education">
+                <input type="text" placeholder="Experience">
+                <input type="text" placeholder="Gender">
+                <input type="text" placeholder="Age">
+                <button id="submitBtn">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const submitBtn = document.getElementById('submitBtn');
+        submitBtn.addEventListener('click', function() {
+            // Add your submit functionality here
+            console.log('Counselor details submitted!');
+        });
+    </script>
+</body>
+</html>
